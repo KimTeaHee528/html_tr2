@@ -4,7 +4,6 @@
 	<meta chaset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>form 실습</title>
-</head>
 	<style type="text/css">
 		table {
 	    margin:auto; 
@@ -17,50 +16,43 @@
 			padding: 10px;
 		}
 	</style>
+</head>
 <body>
 	<br><br><h3 style="text-align:center;">기본정보</h3>
-	<table width="1000">
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 이름</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form1">
+	<form method="get" action="./result.html" id="form1">
+		<table width="1000">
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 이름</span></td>
+				<td>
 					<input type="text" name="name" id="name" required>
-				</form>
-			</td>
-		</tr>
-		<tr height="90">
-			<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 아이디</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form2">
+				</td>
+			</tr>
+			<tr height="90">
+				<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 아이디</span></td>
+				<td>
 					<input type="text" name="id" id="id" required>
 					<input type="button" id="idc" value="아이디중복확인" onclick="here();">
 					<br><span style="color: rgb(180, 140, 40)">💬6~16자까지 영문자(소문자), 숫자사용 가능합니다.</span>
-				</form>
-			</td>
-		</tr>
-		<tr height="120">
-			<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 비밀번호</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form3">
+				</td>
+			</tr>
+			<tr height="120">
+				<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 비밀번호</span></td>
+				<td>
 					<input type="password" name="pw" id="pw" required><br>
 					<span style="color: rgb(180, 140, 40)">💬6~16자까지 영문자(소문자), 숫자 및 특수문자 사용 가능합니다.
 						<br>3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.
 					</span>
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 비밀번호 확인</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form4">
-					<input type="password" name="pwc" id="pwc" required>
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 이메일</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form5">
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 비밀번호 확인</span></td>
+				<td>
+					<input type="password" name="pwre" id="pwre" required>
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 이메일</span></td>
+				<td>
 					<input type="text" name="e1" id="e1" required>&nbsp;@&nbsp;<input type="text" name="e2" id="e2" vlaue=document.getElementById("es") required>
 					<select name="gender" id="es" style="width:130px;height:21px;">
 						<option value="">이메일주소선택
@@ -68,102 +60,79 @@
 						<option value="naver.com">naver.com
 						<option value="hanmail.com">hanmail.com
 					</select>
-				</form>
-			</td>
-		</tr>
-		<tr height="120">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 연락처</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form6">
-					<p>휴대전화&nbsp;
-						<select name="ph" id="ph" style="width:50px;height:21px;">
-							<option value="010">010
-							<option value="011">011
-						</select>&nbsp;-
-						<input type="text" name="ph1" id="ph1" style="width:50px;">&nbsp;-&nbsp;<input type="text" name="ph2" id="ph2" style="width:50px;">
-					</p>
-					<p>일반전화&nbsp;
-						<select name="tel" id="tel" style="width:50px;height:21px;">
-							<option value="010">02
-							<option value="011">031
-							<option value="010">032
-							<option value="011">070
-						</select>&nbsp;-
-						<input type="text" name="tel1" id="tel1" style="width:50px;">&nbsp;-&nbsp;<input type="text" name="tel2" id="tel2" style="width:50px;">
-						<span style="color: rgb(180, 140, 40)">
-							<br>💬연락처는 둘 중 하나만 입력해도 됩니다.
-						</span>
-					</p>
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 우편번호</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form7">
+				</td>
+			</tr>
+			<tr height="120">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 연락처</span></td>
+				<td>
+					<p>휴대전화&nbsp;</p>
+					<select name="ph" id="ph" style="width:50px;height:21px;">
+						<option value="010">010
+						<option value="011">011
+					</select>&nbsp;-
+					<input type="text" name="ph1" id="ph1" style="width:50px;">&nbsp;-&nbsp;<input type="text" name="ph2" id="ph2" style="width:50px;">
+					<p>일반전화&nbsp;</p>
+					<select name="tel" id="tel" style="width:50px;height:21px;">
+						<option value="010">02
+						<option value="011">031
+						<option value="010">032
+						<option value="011">070
+					</select>&nbsp;-
+					<input type="text" name="tel1" id="tel1" style="width:50px;">&nbsp;-&nbsp;<input type="text" name="tel2" id="tel2" style="width:50px;">
+					<span style="color: rgb(180, 140, 40)">
+						<br>💬연락처는 둘 중 하나만 입력해도 됩니다.
+					</span>
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 우편번호</span></td>
+				<td>
 					<input type="text" name="post" id="post" style="height:20px;">
 					<input type="button" id="pbtn" value="주소검색" onclick="here();" style="width:80px;height:25px;">
-				</form>
-			</td>
-		</tr>
-		<tr height="90">
-			<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 주소</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form8">
+				</td>
+			</tr>
+			<tr height="90">
+				<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 주소</span></td>
+				<td>
 					<input type="text" name="add1" id="add1" style="width:600px;"><br>
 					<input type="text" name="add2" id="add2" style="width:300px;">
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 정보수신여부</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form9">
-					서비스 및 이벤트 소식을&nbsp;&nbsp;&nbsp;<input type="checkbox" name="cehck1">Email로 수신하겠습니다.
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 정보수신여부</span></td>
+				<td>서비스 및 이벤트 소식을&nbsp;&nbsp;&nbsp;<input type="checkbox" name="cehck1">Email로 수신하겠습니다.
 					<input type="checkbox" name="cehck2">SMS로 수신하겠습니다.
-				</form>
-			</td>
-		</tr>
-	</table>
-	<h3 style="text-align:center;">작가정보</h3>
-	<table width="1000">
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">프로필이미지</span></td>
-			<td>
-				<input type="file" id="ifile" value="파일선택" onclick="here();"></td>
-		</tr>
-		<tr height="90">
-			<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 필명</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form10">
-					<input type="password" name="aname" id="aname"><br>
+				</td>
+			</tr>
+		</table>
+		<h3 style="text-align:center;">작가정보</h3>
+		<table width="1000">
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">프로필이미지</span></td>
+				<td><input type="file" id="ifile" value="파일선택" onclick="here();"></td>
+			</tr>
+			<tr height="90">
+				<td bgcolor="#8C8C8C" align=center><span style="color: rgb(255, 255, 255)">✔ 필명</span></td>
+				<td><input type="password" name="aname" id="aname"><br>
 					<span style="color: rgb(180, 140, 40)">💬필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름입니다.)
 					</span>
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">대표작</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form11">
-					<input type="password" name="mp" id="mp" style="width:300px;">
-				</form>
-			</td>
-		</tr>
-		<tr height="150">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">수상내역</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form12">
-					<textarea rows="20" cols="100" name="prize" placeholder="posting"></textarea><br>
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">대표작</span></td>
+				<td><input type="password" name="mp" id="mp" style="width:300px;">
+				</td>
+			</tr>
+			<tr height="150">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">수상내역</span></td>
+				<td><textarea rows="20" cols="100" name="prize" placeholder="posting"></textarea><br>
 					<span style="color: rgb(180, 140, 40)">💬여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다(작가정보에 노출 될 이름입니다.)
 					</span>
-				</form>
-			</td>
-		</tr>
-		<tr height="120">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">주요작품</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form13">
+				</td>
+			</tr>
+			<tr height="120">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">주요작품</span></td>
+				<td>
 					<input type="text" name="story1" id="story1" placeholder="스토리 제목을 입력하세요" style="width:300px;">
 					<input type="text" name="work1" id="work1" placeholder="역할을 입력하세요" style="width:300px;">
 					<input type="button" id="dbtn" value="삭제" onclick="here();"><br>
@@ -171,53 +140,43 @@
 					<span style="color: rgb(180, 140, 40)">💬본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
 						<br>(역할은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)
 					</span>
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">작가공개설정</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form14">
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">작가공개설정</span></td>
+				<td>
 					<input type="radio" name="disclosure">공개
 					<input type="radio" name="disclosure">비공개
-				</form>
-			</td>
-		</tr>
-	</table>
-	<br>
-	<table width="1000">
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 소속(회사)</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form15">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table width="1000">
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 소속(회사)</span></td>
+				<td>
 					<input type="text" name="name" id="name" style="width:300px;">
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">사업자등록번호</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form">
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">사업자등록번호</span></td>
+				<td>
 					<input type="text" name="name" id="name" style="width:90px;">-
 					<input type="text" name="name" id="name" style="width:70px;">-
 					<input type="text" name="name" id="name" style="width:150px;">
-				</form>
-			</td>
-		</tr>
-		<tr height="90">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 사업자등록증(첨부)</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form16">
+				</td>
+			</tr>
+			<tr height="90">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 사업자등록증(첨부)</span></td>
+				<td>
 					<input type="file" id="btnsave" value="파일 선택" onclick="here();"><br>
 					<span style="color: rgb(180, 140, 40)">💬소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/PDF파일 업로드 불가)
 					</span>
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 분야</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form17">
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 분야</span></td>
+				<td>
 					<input type="checkbox" name="m1">영화
 					<input type="checkbox" name="m2">방송
 					<input type="checkbox" name="m3">출판
@@ -226,38 +185,34 @@
 					<input type="checkbox" name="m6">캐릭터/애니메이션
 					<input type="checkbox" name="m6">기타
 					<input type="text" name="name" id="name">
-				</form>
-			</td>
-		</tr>
-		<tr height="45">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 직종</span></td>
-			<td>
-				<form method="get" action="./result.html" id="form18">
+				</td>
+			</tr>
+			<tr height="45">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">✔ 직종</span></td>
+				<td>
 					<input type="checkbox" name="m1">제작자
 					<input type="checkbox" name="m2">투자자
 					<input type="checkbox" name="m3">에이전트
 					<input type="checkbox" name="m4">기타
 					<input type="text" name="name" id="name">
-				</form>
-			</td>
-		</tr>
-	</table>
-	<table width="1000">
-		<tr height="120">
-			<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">주요경력</span></td>
-			<td>
-				<p>주요경력사항을 등록해 주시기 바랍니다.<br>
-				<span style="color: rgb(180, 140, 40)">💬(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다.)</span></p>
-				<form method="get" action="./result.html" id="form19">
+				</td>
+			</tr>
+		</table>
+		<table width="1000">
+			<tr height="120">
+				<td bgcolor="#8C8C8C" align=center width="150"><span style="color: rgb(255, 255, 255)">주요경력</span></td>
+				<td>
+					<p>주요경력사항을 등록해 주시기 바랍니다.</p><br>
+					<span style="color: rgb(180, 140, 40)">💬(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다.)</span>
 					<input type="date">&nbsp;~&nbsp;<input type="date">
 					<input type="text" name="name" id="name" placeholder="사업내용을 입력해주세요">
 					<input type="text" name="name" id="name" placeholder="담당업무를 입력해주세요">
 					<input type="button" id="btnsave" value="삭제" onclick="here();"><br><br>
 					<input type="button" id="btnsave" value="+추가" onclick="here();"><br><br>
-				</form>
-			</td>
-		</tr>
-	</table>
+				</td>
+			</tr>
+		</table>
+	</form>
 	<br><br>
 	<form method="get" action="./result.html" id="form20" style="text-align:center;">
 		<input type="image" src="./sbtn.png" name="id" style="width:110px; height:30px;">&nbsp;
