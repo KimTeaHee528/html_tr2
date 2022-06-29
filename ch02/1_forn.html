@@ -9,10 +9,29 @@
 <body>
 <!-- method="get"은 링크에 내용표시"post"는 안표시(생략하면 get방식) -->
 	<form method="get" action="./result.html" id="form">
-		<input type="text" name="id" placeholder="아이디" id="id">
+		<input type="text" name="id" placeholder="아이디" id="id" autocomplete="on">
+		<input type="text" name="id" placeholder="아이디" id="id" autocomplete="off">
+		<input type="text" name="id" placeholder="아이디" id="id" required>
+		<input type="text" name="id" placeholder="아이디" id="id" readonly value="excitingmvr">
+		<input type="text" name="id" placeholder="아이디" id="id" disabled value="excitingmvr">
 		<br><br><input type="password" name="pw" placeholder="비밀번호" id="pw">
+		<br><input type="email" name="id">
+		<br><input type="file" name="id">
+		<br><input type="file" name="id" multiple="multiple">
+		<br><input type="image" src="../image/cafe.jpg" name="id">
+		<br><input type="number" name="id">
+		<br><input type="range" name="id">
+		<br><input type="search" name="id">
+		<br><input type="tel" name="id">
+		<br><input type="url" name="id">
 		<br><br>
 		
+		
+		
+		
+		
+		
+<!-- 		
 		<select name="gender" id="gender">
 			<option value="">성별
 			<option value="남자">남자
@@ -41,7 +60,7 @@
 		
 		<br><br>
 		<input type="hidden" name="seq" value="678435">
-		
+		 -->
 		<br><br>
 		<input type="date">
 		
