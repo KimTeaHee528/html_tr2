@@ -10,7 +10,7 @@
 	    margin:auto; 
 		}
 		table, th, td{
- 			border: 1px solid rgb(192, 192, 192);
+ 			border: 2px solid rgb(230, 230, 230);
 			border-collapse: collapse;
 		}
 		th, rd{
@@ -18,9 +18,75 @@
 		}
 	</style>
 <body>
-
-
-
+	<h5>기본정보</h5>
+	<table width="1000">
+		<tr height="45">
+			<td bgcolor="#5D5D5D" align=center width="150"><span style="color: rgb(255, 255, 255)">이름</span></td>
+			<td><form method="get" action="./result.html" id="form">
+					<input type="text" name="name" id="name">
+				</form>
+			</td>
+		</tr>
+		<tr height="90">
+			<td bgcolor="#5D5D5D" align=center><span style="color: rgb(255, 255, 255)">아이디</span></td>
+			<td><form method="get" action="./result.html" id="form">
+					<input type="text" name="id" id="id">
+					<input type="button" id="btnsave" value="아이디중복확인" onclick="here();">
+					<br><span style="color: rgb(150, 100, 0)">6~16자까지 영문자(소문자), 숫자사용 가능합니다.</span>
+				</form>
+			</td>
+		</tr>
+		<tr height="120">
+			<td bgcolor="#5D5D5D" align=center><span style="color: rgb(255, 255, 255)">비밀번호</span></td>
+			<td><form method="get" action="./result.html" id="form">
+					<input type="password" name="pw" id="pw"><br>
+					<span style="color: rgb(150, 100, 0)">6~16자까지 영문자(소문자), 숫자 및 특수문자 사용 가능합니다.
+						<br>3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.
+					</span>
+				</form>
+			</td>
+		</tr>
+		<tr height="45">
+			<td bgcolor="#5D5D5D" align=center width="150"><span style="color: rgb(255, 255, 255)">비밀번호 확인</span></td>
+			<td><form method="get" action="./result.html" id="form">
+					<input type="password" name="pwc" id="pwc">
+				</form>
+			</td>
+		</tr>
+		<tr height="45">
+			<td bgcolor="#5D5D5D" align=center width="150"><span style="color: rgb(255, 255, 255)">이메일</span></td>
+			<td><form method="get" action="./result.html" id="form">
+					<input type="text" name="e1" id="e1">@<input type="text" name="e2" id="e2">
+					<select name="gender" id="gender">
+						<option value="">이메일주소선택
+						<option value="gmail.com">gmail.com
+						<option value="naver.com">naver.com
+						<option value="hanmail.com">hanmail.com
+					</select>
+				</form>
+			</td>
+		</tr>
+		<tr height="120">
+			<td bgcolor="#5D5D5D" align=center width="150"><span style="color: rgb(255, 255, 255)">연락처</span></td>
+			<td><form method="get" action="./result.html" id="form">
+					<p>휴대전화&nbsp;
+						<select name="gender" id="gender">
+							<option value="010">010
+							<option value="011">011
+						</select>-
+						<input type="text" name="ph1" id="ph1">-<input type="text" name="ph2" id="ph2">
+						</p>
+						<p>일반전화&nbsp;
+						<select name="gender" id="gender">
+							<option value="010">010
+							<option value="011">011
+						</select>-
+						<input type="text" name="tel1" id="tel1">-<input type="text" name="tel2" id="tel2">
+					</p>
+				</form>
+			</td>
+		</tr>
+	</table>
 
 </body>
 </html>
