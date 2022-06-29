@@ -8,7 +8,7 @@
 
 <body>
 <!-- method="get"은 링크에 내용표시"post"는 안표시(생략하면 get방식) -->
-	<form method="get" action="./result.html">
+	<form method="get" action="./result.html" id="form">
 		<input type="text" name="id" placeholder="아이디" id="id">
 		<br><br><input type="password" name="pw" placeholder="비밀번호" id="pw">
 		<br><br>
@@ -40,14 +40,20 @@
 		<textarea rows="10" cols="50" name="contents" placeholder="posting"></textarea>
 		
 		<br><br>
-		<input type="hidden" name="" value="">
+		<input type="hidden" name="seq" value="678435">
 		
 		<br><br>
 		<input type="date">
 		
 		
 		
+		<br><br><input type="submit" value="서밋">
 		<br><br><input type="submit">
+		
+		<br><br><input type="button" id="btnsave" value="전송합니다." onclick="here();">
+		<br><br>
+		
+		
 	</form>
 <!-- 	
 	<script type="text/javascript">
@@ -57,7 +63,15 @@
 			document.getElementById("form").submit();
 		}
 	</script>
- -->
+	 -->
+	<script type="text/javascript">
+		/* Validation */
+		function here(){
+			alert("hkgckhgvkutvk");
+			document.getElementById("form").submit();
+		}
+	</script>
+
 </body>
 </html>
 
