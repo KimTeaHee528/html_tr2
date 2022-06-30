@@ -1,0 +1,21 @@
+/* 	https://noonnu.cc/ 여기서 받아오기 */
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ .aa{
+ 	font-family: GmarketSansLight;
+    font-size: 20px;
+ }
+ .bb{
+ 	font-family: GmarketSansLight;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .cc{
+ 	font-family: GmarketSansLight;
+    font-size: 20px;
+    font-weight: bolder;
+ }
