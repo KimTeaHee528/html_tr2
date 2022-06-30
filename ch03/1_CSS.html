@@ -6,17 +6,18 @@
 	<title>css 실습</title>
 	<style type="text/css">
 	/* 내부스타일 시트 */
-	 	.aaa{
+	 	.bbb{
 			background-color: green;
 			color: white; 
 		}
 	</style>
-	/* 외부스타일 시트 */
+	<!-- 외부스타일 시트 -->
 	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<!-- 가장 마지막 스타일이 적용된다
+		단 인라인이 존재할 경우 인라인이 가장 우세 -->
 </head>
 
 <body>
-	<p class="aaa">가나다라마바사아자차카타파하</p>
-
+	<p class="bbb">가나다라마바사아자차카타파하</p>
 </body>
 </html>
