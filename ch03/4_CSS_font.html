@@ -4,9 +4,37 @@
 	<meta chaset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>김태희</title>
+	<style type="text/css">
+		h1, p, span, ul, li{
+			color:blue;
+			font-size:10px;
+		}
+ 		#aa{
+			color:black;
+			font-size:20px;
+		}
+		ul > #aa{
+			color:gray;
+		}
+		.aa{
+			color:green;
+		}
+		/* ul안에 있는 aa클레스만 빨강 */
+		ul > .aa{
+			color:red;
+		}
+	</style>
 </head>
-
 <body>
-
+	<h1>h111111111</h1>
+	<p>pppppppppppp</p>
+	<span id="aa">spaaaaaaaaaaan</span>
+	<span class="aa">spaaaaaaaaaaan</span>
+	<ul>
+		<li>llllllll1
+		<li id="aa">llllllll2
+		<li>llllllll3
+		<li class="aa">llllllll4
+	</ul>
 </body>
 </html>
