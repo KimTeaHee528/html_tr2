@@ -5,14 +5,27 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ulsanjunggu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ulsanjunggu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EF_hyunygothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_hyunygothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
  .aa{
- 	font-family: GmarketSansLight;
- }
- .bb{
  	font-family: GmarketSansLight;
     font-weight: bold;
  }
+ .bb{
+ 	font-family: ulsanjunggu;
+    font-weight: bold;
+ }
  .cc{
- 	font-family: GmarketSansLight;
-    font-weight: bolder;
+ 	font-family: EF_hyunygothic;
+    font-weight: bold;
  }
