@@ -5,7 +5,8 @@
     font-style: normal;
 }
 table {
-    margin:auto; 
+    margin:auto;
+    width:1000px;
 }
 table, th, td{
 	border: 1px solid rgb(192, 192, 192);
@@ -13,7 +14,25 @@ table, th, td{
 	align-content:center;
 	text-align:center;
 }
+th{
+	background-color : #D4F4FA;
+	
+}
 
 h1{
 	text-align:center;
+}
+.outd{
+	display: block; 
+	text-align: center;
+}
+.ind{
+	display:inline-block; 
+	width: 1000px;
+}
+.tah{
+	background-color : #D4F4FA;
+}
+p{
+	text-align: left;
 }
