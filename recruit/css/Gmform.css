@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+table {
+	border: 1px solid rgb(149, 149, 149);
+    margin:auto;
+    width:1000px;
+}
+
+h1{
+	text-align:center;
+}
+.outd{
+	display: block; 
+	text-align: center;
+}
+.ind{
+	display:inline-block; 
+	width: 1000px;
+}
+.tah{
+	background-color : #D4F4FA;
+    font-weight: bold;
+}
