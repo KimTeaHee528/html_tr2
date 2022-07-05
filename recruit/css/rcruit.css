@@ -5,6 +5,7 @@
     font-style: normal;
 }
 body{
+	position:relative;
 	background-image: url('../image/stairs1.jpg');
 	background-size:cover;
 	font-family: GmarketSansLight;
@@ -12,8 +13,8 @@ body{
 }
 table, tr{
   	margin:auto;
-	border: 1px solid;
-	background-color:white;
+	border: 0px solid;
+	background-color:rgba(255,255,255,80%);
 	width: 800px;
 	text-align: left;
 }
