@@ -26,16 +26,16 @@
 				<table width="1000" height="50">
 					<tr>
 						<td bgcolor="D4F4FA" align=center width="15%" height="15">지원분야</td>
-						<td>&nbsp;<input type="text" id="f1" placeholder="웹개발" required style="border: none; width: 95%; height: 90%;"></td>
+						<td>&nbsp;<input type="text" id="f1" value="웹개발" required style="border: none; width: 95%; height: 90%;"></td>
 						<td bgcolor="D4F4FA" align=center width="15%">경력구분</td>
 						<td width="15%">&nbsp;
-							<select name="gender" id="f2" style="width:130px;height:21px; border: none; width: 95%; height: 50%;">
+							<select name="gender" id="f2" value="신입" style="width:130px;height:21px; border: none; width: 95%; height: 50%;">
 								<option value="">-
 								<option value="신입">신입
 								<option value="경력">경력
 							</select></td>
 						<td bgcolor="D4F4FA" align=center width="15%">희망연봉</td>
-						<td align=center width="15%"><input type="text" id="f3" required style="border: none; width: 95%; height: 90%;"></td>
+						<td align=center width="15%"><input type="text" id="f3" value="회사 내규에 따름" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 				</table>
 				<br><br>
@@ -44,27 +44,27 @@
 					<tr>
 						<td style="padding:10;" align=center width="130" rowspan="6"><img src = "./image/kth.jpg" width="98%" height = "98%"></td>
 						<td bgcolor="D4F4FA" align=center width="90">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
-						<td width="320"><input type="text" id="f4" required style="border: none; width: 95%; height: 90%;"></td>
+						<td width="320"><input type="text" id="f4" value="김태희" required style="border: none; width: 95%; height: 90%;"></td>
 						<td bgcolor="D4F4FA" align=center width="90">한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
-						<td><input type="text" id="f5" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f5" value="金泰熙" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr>
 						<td bgcolor="D4F4FA" align=center >영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
-						<td><input type="text" id="f6" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f6" value="Kim Tae Hee" required style="border: none; width: 95%; height: 90%;"></td>
 						<td bgcolor="D4F4FA" align=center width="80">생년월일</td>
-						<td><input type="date" id="f7" style="border: none;"></td>
+						<td><input type="date" id="f7" value="1991-05-28" style="border: none;"></td>
 					</tr>
 					<tr>
 						<td bgcolor="D4F4FA" align=center >전화번호</td>
-						<td><input type="text" id="f8" required placeholder="&nbsp;'-'&nbsp;생략" style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f8" value="01030157203" required placeholder="&nbsp;'-'&nbsp;생략" style="border: none; width: 95%; height: 90%;"></td>
 						<td bgcolor="D4F4FA" align=center width="80">바상연락망</td>
-						<td><input type="text" id="f9" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f9" value="028867203" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr>
 						<td bgcolor="D4F4FA" align=center >전자우편</td>
 						<td>
-							<input type="text" id="f10" required style="border: none; width: 40%; height: 90%;">@
-							<select name="gender" id="f11" style="width:130px;height:21px; border: none; width: 40%; height: 90%; vertical-align: top;">
+							<input type="text" id="f10" value="spmm528" required style="border: none; width: 40%; height: 90%;">@
+							<select name="gender" id="f11" value="gmail.com" style="width:130px;height:21px; border: none; width: 40%; height: 90%; vertical-align: top;">
 								<option value="">-
 								<option value="gmail.com">gmail.com
 								<option value="naver.com">naver.com
@@ -73,7 +73,7 @@
 						</td>
 						<td bgcolor="D4F4FA" align=center width="80">나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</td>
 						<td>
-							<select id="f12" style="width:130px;height:21px; border: none; width: 30%; height: 90%; vertical-align: top;">
+							<select id="f12" value="32" style="width:130px;height:21px; border: none; width: 30%; height: 90%; vertical-align: top;">
 								<option value="">-
 								<option value="20">20
 								<option value="21">21
@@ -101,11 +101,11 @@
 					</tr>
 					<tr>
 						<td bgcolor="D4F4FA" align=center >주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</td>
-						<td colspan="3"><input type="text" id="f13" required style="border: none; width: 95%; height: 90%;"></td>
+						<td colspan="3"><input type="text" id="f13" value="서울 관악구 중앙동 신봉아파트" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr>
 						<td bgcolor="D4F4FA" align=center >취미</td>
-						<td colspan="3"><input type="text" id="f14" required style="border: none; width: 95%; height: 90%;"></td>
+						<td colspan="3"><input type="text" id="f14" value="산책" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					</tr>
 				</table>
@@ -119,32 +119,36 @@
 						<td width="120">소재지</td>
 					</tr>
 					<tr align=center>
-						<td height="30"><input type="date" id="f15" style="border: none; width: 35%; height: 90%;">&nbsp;~&nbsp;<input type="date" id="f16" style="border: none; width: 35%; height: 90%;"></td>
-						<td><input type="text" id="f17" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f15" value="2017-03-01" style="border: none; width: 35%; height: 90%;">&nbsp;~&nbsp;
+							<input type="date" id="f16" value="2021-02-01" style="border: none; width: 35%; height: 90%;">
+						</td>
+						<td><input type="text" id="f17" value="OO대학교" required style="border: none; width: 95%; height: 90%;"></td>
 						<td>
-							<select name="gender" id="f18" style="width:130px;height:21px; border: none; width: 95%; height: 90%;">
+							<select name="gender" id="f18" value="졸업" style="width:130px;height:21px; border: none; width: 95%; height: 90%;">
 								<option value="">-
 								<option value="재학">재학
 								<option value="졸업">졸업
 								<option value="중퇴">중퇴
 							</select>
 						</td>
-						<td><input type="text" id="f19" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f20" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f19" value="OO과" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f20" value="서울" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr align=center>
-						<td height="30"><input type="date" id="f21" style="border: none; width: 35%; height: 90%;">&nbsp;~&nbsp;<input type="date" id="f22" style="border: none; width: 35%; height: 90%;"></td>
-						<td><input type="text" id="f23" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f21" value="2014-03-01" style="border: none; width: 35%; height: 90%;">&nbsp;~&nbsp;
+							<input type="date" id="f22" value="2017-02-01" style="border: none; width: 35%; height: 90%;">
+						</td>
+						<td><input type="text" id="f23" value="OO고등학교" required style="border: none; width: 95%; height: 90%;"></td>
 						<td>
-							<select name="gender" id="f24" style="width:130px;height:21px; border: none; width: 95%; height: 90%;">
+							<select name="gender" id="f24" value=졸업 style="width:130px;height:21px; border: none; width: 95%; height: 90%;">
 								<option value="">-
 								<option value="재학">재학
 								<option value="졸업">졸업
 								<option value="중퇴">중퇴
 							</select>
 						</td>
-						<td><input type="text" id="f25" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f26" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f25" value="-" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f26" value="서울" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 				</table>
 				<p style="text-align:left;"><b>■[교육연수]</b></p>
@@ -155,9 +159,18 @@
 						<td width="55%">연수과정 및 내용</td>
 					</tr>
 					<tr align=center height="130">
-						<td height="15"><input type="date" id="f27" style="border: none; width: 75%; height: 30%;">&nbsp;~&nbsp;<br><input type="date" id="f28" style="border: none; width: 75%; height: 30%;"></td>
-						<td><textarea rows="10" cols="50" id="f29" style="border: none;"></textarea></td>
-						<td><textarea rows="10" cols="50" id="f30" style="border: none;"></textarea></td>
+						<td height="15"><input type="date" id="f27" value="2021-12-30" style="border: none; width: 75%; height: 30%;">&nbsp;~&nbsp;<br>
+							<input type="date" id="f28" value="2022-06-22" style="border: none; width: 75%; height: 30%;">
+						</td>
+						<td><textarea rows="10" cols="50" id="f29" value="(주)이젠 아카데미<br>(서울 강남역 본원)" style="border: none;"></textarea></td>
+						<td>
+							<textarea rows="10" cols="50" id="f30" 
+								value="Open API활용 자바 안드로이드 웹&앱 개발자
+								: JAVA, JAVASCRIPT, JQUERY, JSP, SPRING, HTML, CSS, GIT
+								Bootstrap, JSTL, AJAX, POSTMAN, AWS, TOMCAT, 등을
+								공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다." style="border: none;">
+							</textarea>
+						</td>
 					</tr>
 				</table>
 				<p style="text-align:left;"><b>■[자격사항]</b></p>
@@ -169,16 +182,16 @@
 						<td>보유기술 및 수준</td>
 					</tr>
 					<tr align=center>
-						<td height="30"><input type="date" id="f31" style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f32" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f33" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f33" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f31" value="2021-08-01" style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f32" value="워드프로세서 1급" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f33" value="대한상공회의소" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f33" value="-" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr align=center>
-						<td height="30"><input type="date" id="f35" style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f36" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f37" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f38" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f35" value="2021-06-01" style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f36" value="정보처리기사" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f37" value="한국산업인력공단" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f38" value="-" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 				</table>
 				<p style="text-align:left;"><b>■경력사항(4대 보험 가입 경력)</b></p>
@@ -190,22 +203,28 @@
 						<td>경험 및 습득역량</td>
 					</tr>
 					<tr>
-						<td height="30"><input type="date" id="f39" style="border: none; width: 40%; height: 90%;">&nbsp;~&nbsp;<input type="date" id="f40" style="border: none; width: 40%; height: 90%;"></td>
-						<td><input type="text" id="f41" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f42" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f43" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f39" value="2020-05-02" style="border: none; width: 40%; height: 90%;">&nbsp;~&nbsp;
+							<input type="date" id="f40" value="2022-05-02" style="border: none; width: 40%; height: 90%;">
+						</td>
+						<td><input type="text" id="f41" value="이젠아카데미" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f42" value="학생상담" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f43" value="상담 잘함" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr>
-						<td height="30"><input type="date" id="f44" style="border: none; width: 40%; height: 90%;">&nbsp;~&nbsp;<input type="date" id="f45" style="border: none; width: 40%; height: 90%;"></td>
-						<td><input type="text" id="f46" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f47" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f48" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f44" value="-" style="border: none; width: 40%; height: 90%;">&nbsp;~&nbsp;
+						<input type="date" id="f45" value="-" style="border: none; width: 40%; height: 90%;">
+					</td>
+						<td><input type="text" id="f46" value="-" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f47" value="-" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f48" value="-" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 					<tr>
-						<td height="30"><input type="date" id="f49" style="border: none; width: 40%; height: 90%;">&nbsp;~&nbsp;<input type="date" id="f50" style="border: none; width: 40%; height: 90%;"></td>
-						<td><input type="text" id="f51" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f52" required style="border: none; width: 95%; height: 90%;"></td>
-						<td><input type="text" id="f53" required style="border: none; width: 95%; height: 90%;"></td>
+						<td height="30"><input type="date" id="f49" value="-" style="border: none; width: 40%; height: 90%;">&nbsp;~&nbsp;
+							<input type="date" id="f50" value="-" style="border: none; width: 40%; height: 90%;">
+						</td>
+						<td><input type="text" id="f51" value="-" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f52" value="-" required style="border: none; width: 95%; height: 90%;"></td>
+						<td><input type="text" id="f53" value="-" required style="border: none; width: 95%; height: 90%;"></td>
 					</tr>
 				</table>
 				<br>
