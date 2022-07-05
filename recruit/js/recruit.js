@@ -1,3 +1,3 @@
 function pop(){
-	window.open("pop.html","안녕하세요^^","width=260,height=100");
+	window.open("pop.html","확인창","width=260,height=100");
 }
