@@ -6,22 +6,22 @@
 	<link href="./css/rcruit.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div style="display: block; text-align: center;">
-		<div align="center" style="display:inline-block; width: 1000px;">
-		<br>
-		<h1 id="top">입사지원 목록</h1><hr>
-		<div style="padding: 0px 530px 10px 0px;">
-			<select style="position: relative; display: inline-block; width: 80px; height: 29px;" name="gender" id="es">
-				<option value="">전체
-				<option value="name">이름
-				<option value="age">나이
-				<option value="tel">연락처
-				<option value="add">주소
-				<option value="job">직업
-				<option value="email">이메일
-			</select>
-			<input style="position: relative; display: inline-block; height:24px; width: 100px;" type="text" name="aa" id="aa" placeholder="검색...">
-			<input type="button" name="aaㅁ" id="aㅁa" value="검색" style="height:30px;">
+	<div class="outd">
+		<div class="ind">
+			<br>
+			<h1 id="top">입사지원 목록</h1><hr>
+			<div class="serd">
+				<select style="width: 80px; height: 29px;" id="ser">
+					<option value="">전체
+					<option value="name">이름
+					<option value="age">나이
+					<option value="tel">연락처
+					<option value="add">주소
+					<option value="job">직업
+					<option value="email">이메일
+				</select>
+				<input style="position: relative; display: inline-block; height:24px; width: 100px;" type="text" name="aa" id="aa" placeholder="검색...">
+				<input type="button" name="aa" id="aa" value="검색" style="height:30px;">
 			</div>
 			<table>
 				<tr>
@@ -276,10 +276,10 @@
 				</tr>
 			</table>
 			<hr>
-				<input type="button" onclick="location.href='recruitview.html'" id="btn" value="이력서 보기" style="height:30px;">
-				<input type="button" onclick='pop()' id="btn" value="삭제" style="height:30px;">
-				<a href="#top"><img src = "./image/top.png" style="width:30px; height: 30px; position: fixed; bottom: 20px;right: 20px; max-width: 100%;"></a>
-				<script type="text/javascript" src="./js/recruit.js"></script>
+			<input type="button" onclick="location.href='recruitview.html'" id="btn" value="이력서 보기" style="height:30px;">
+			<input type="button" onclick='pop()' id="btn" value="삭제" style="height:30px;">
+			<a href="#top"><img src = "./image/top.png" style="width:30px; height: 30px; position: fixed; bottom: 20px;right: 20px; max-width: 100%;"></a>
+			<script type="text/javascript" src="./js/recruit.js"></script>
 		</div>
 	</div>
 </body>

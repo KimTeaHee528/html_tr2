@@ -11,12 +11,11 @@ body{
 	font-family: GmarketSansLight;
     font-weight: bold;
 }
-table, tr{
-  	margin:auto;
+table{
 	border: 0px solid;
 	background-color:rgba(255,255,255,80%);
-	width: 800px;
-	text-align: left;
+  	margin:auto;
+	width: 100%;
 }
 tr{
 	cursor:pointer;
@@ -26,10 +25,17 @@ th{
 	border-color: rgb(220, 220, 220);
 	text-align: center;
 }
-.btn{
-	border-width: 1px;
-	border: solid;
-}
 a{
  	display: inline-block;
+}
+.outd{
+	display: block; 
+	text-align: center;
+}
+.ind{
+	display:inline-block; 
+	width: 1000px;
+}
+.serd{
+	text-align:left;
 }
