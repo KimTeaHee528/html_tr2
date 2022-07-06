@@ -37,8 +37,11 @@ a{
 	width: 1500px;
 }
 .serd{
-	text-align:left;
+	text-align:right;
 }
 input{
 	display: inline-block; 
+}
+.cbox{
+	text-align:left;
 }
