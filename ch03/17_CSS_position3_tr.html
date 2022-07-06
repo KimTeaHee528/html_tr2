@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta chaset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>테이블 CSS연습</title>
+	<style type="text/css">
+		table{
+ 			border: 0px solid gray;
+			border-collapse: collapse;
+ 			width: 1000px;
+		}
+		tr,td,th{
+ 			border: 0px solid gray;
+		}
+		li{
+			text-align: left; 
+		}
+		#thead{
+			background-color: white;
+		}
+		#GNB{
+			background-color: blue;
+		}
+		#tm{
+			background-color: gray;
+			width: 200px;
+		}
+		#tin{
+			background-color: green;
+			height: 50px;
+		}
+		#tb{
+			background-color: black;
+			color:white;
+			text-align: center;
+			height: 80px;
+			vertical-align: top;
+		}
+	</style>
+</head>
+
+<body>
+<br>
+	<table>
+		<tr>
+			<td id="thead" colspan="11">해더</td>
+		</tr>
+		<tr>
+			<td id="GNB" colspan="11">GNB</td>
+		</tr>
+		<tr>
+			<td id="tm" rowspan="3">
+				<ul>
+					<li>회원 관리
+					<li>사이트 관리
+					<li>시스템 관리
+					<li>커뮤니케이션 관리
+					<li>템플릿 관리
+					<li>로그 관리
+					<li>통계
+				</ul>
+			</td>
+			<td id="tin" colspan="10"><h3>회원관리</h3></td>
+		</tr>
+		<tr style="height: 50px;">
+			<td>no</td>
+			<td>관리자여부</td>
+			<td>이름</td>
+			<td>아이디</td>
+			<td>이메일</td>
+			<td>핸드폰</td>
+			<td>마지막 로그인</td>
+			<td>회원가입일</td>
+			<td>최근수정일</td>
+			<td>탈퇴여부</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td id="tb" colspan="11">Copy right. 1230-Tony Teacher</td>
+		</tr>
+	</table>
+</body>
+</html>
