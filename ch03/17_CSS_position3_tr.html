@@ -6,12 +6,16 @@
 	<title>테이블 CSS연습</title>
 	<style type="text/css">
 		table{
+			text-align: center;
  			border: 0px solid gray;
 			border-collapse: collapse;
- 			width: 1000px;
+ 			width: 1500px;
 		}
 		tr,td,th{
  			border: 0px solid gray;
+		}
+		tr{
+			height: 50px;
 		}
 		li{
 			text-align: left; 
@@ -21,19 +25,22 @@
 		}
 		#GNB{
 			background-color: blue;
+			color: white;
 		}
 		#tm{
 			background-color: gray;
 			width: 200px;
+			height: 280px;
 		}
 		#tin{
+ 			border: 1px solid gray;
+		}
+		#tinh{
 			background-color: green;
-			height: 50px;
 		}
 		#tb{
 			background-color: black;
 			color:white;
-			text-align: center;
 			height: 80px;
 			vertical-align: top;
 		}
@@ -44,7 +51,7 @@
 <br>
 	<table>
 		<tr>
-			<td id="thead" colspan="11">해더</td>
+			<td id="thead" colspan="11"><h1>해더</h1></td>
 		</tr>
 		<tr>
 			<td id="GNB" colspan="11">GNB</td>
@@ -61,31 +68,31 @@
 					<li>통계
 				</ul>
 			</td>
-			<td id="tin" colspan="10"><h3>회원관리</h3></td>
-		</tr>
-		<tr style="height: 50px;">
-			<td>no</td>
-			<td>관리자여부</td>
-			<td>이름</td>
-			<td>아이디</td>
-			<td>이메일</td>
-			<td>핸드폰</td>
-			<td>마지막 로그인</td>
-			<td>회원가입일</td>
-			<td>최근수정일</td>
-			<td>탈퇴여부</td>
+			<td id="tinh" colspan="10"><h1>회원관리</h1></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td id="tin">no</td>
+			<td id="tin">관리자여부</td>
+			<td id="tin">이름</td>
+			<td id="tin">아이디</td>
+			<td id="tin">이메일</td>
+			<td id="tin">핸드폰</td>
+			<td id="tin">마지막 로그인</td>
+			<td id="tin">회원가입일</td>
+			<td id="tin">최근수정일</td>
+			<td id="tin">탈퇴여부</td>
+		</tr>
+		<tr>
+			<td id="tin">1</td>
+			<td id="tin">Y</td>
+			<td id="tin">김태희</td>
+			<td id="tin">spm528</td>
+			<td id="tin">spmm528@gmail.com</td>
+			<td id="tin">010-xxxx-xxxx</td>
+			<td id="tin">2022-07-05</td>
+			<td id="tin">2022-07-03</td>
+			<td id="tin">2022-07-05</td>
+			<td id="tin">N</td>
 		</tr>
 		<tr>
 			<td id="tb" colspan="11">Copy right. 1230-Tony Teacher</td>
