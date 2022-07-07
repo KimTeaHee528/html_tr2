@@ -361,7 +361,7 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
-/*end-commonstyles library*/@charset "UTF-8";
+/*end-commonstyles library @charset "UTF-8";*/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -18499,6 +18499,10 @@ a.pswp__share--download:hover {
     opacity: 1;
   }
 }
+
+
+/* --------------------------------------------------------------------------
+
 @keyframes customAnimationIn {
   from {
     transform-origin: center center;
@@ -18523,6 +18527,8 @@ a.pswp__share--download:hover {
     opacity: var(--animation-custom_in-opacity);
   }
 }
+ */
+
 .customAnimationIn {
   animation-name: customAnimationIn;
 }
