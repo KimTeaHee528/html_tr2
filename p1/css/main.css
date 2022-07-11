@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	position:relative;
+	background-image: url('../image/stairs1.jpg');
+	background-size: cover;
+	font-family: GmarketSansLight;
+    font-weight: bold;
+}
+table{
+	border: 3px solid rgba(149,149,149,80%);
+	background-color:rgba(255,255,255,80%);
+  	margin:auto;
+	width: 100%;
+}
+div{
+	box-sizing: content-box;
+	border: 1px solid black;
+}
+.outd{
+	display: block; 
+	text-align: center;
+	background-color: gray;
+	height: 5000px;
+}
+.ind{
+	display:inline-block; 
+	width: 1920px;
+	background-color: blue;
+}
+.serd{
+	text-align:right;
+	
+}
+.boxa{
+	float: center;
+}
+.boxb{
+	float: left;
+}
+.boxc{
+	float: left;
+}
+.boxd{
+	float: right;
+}
