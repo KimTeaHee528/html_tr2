@@ -11,18 +11,98 @@
 		<div class="ind">
 			<div class="nbar">navbar</div>
 			<div class="boxa">
-				aa
+				<img src="../image/toy/logo.png" alt="..." style="height: 50px;">
 			</div>
 			<div class="box_signup">
-				<a href="./signup.html">회원가입</a>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Sign in
+				</button>
+				<div style="float: left;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">회원가입</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div style="height: 250px;" class="modal-body">
+								<form class="px-4 py-3">
+									<div class="mb-3">
+										<label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+										<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+									</div>
+									<div class="mb-3">
+										<label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+										<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+									<div>
+										<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="dropdownCheck">
+											<label class="form-check-label" for="dropdownCheck">
+												Remember me
+											</label>
+										</div>
+									</div>
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="box_login">
-				<a href="./login.html">로그인</a>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Sign in
+				</button>
+				<div style="float: left;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">로그인</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div style="height: 250px;" class="modal-body">
+								<form class="px-4 py-3">
+									<div class="mb-3">
+										<label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+										<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+									</div>
+									<div class="mb-3">
+										<label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+										<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+									<div>
+										<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="dropdownCheck">
+											<label class="form-check-label" for="dropdownCheck">
+												Remember me
+											</label>
+										</div>
+									</div>
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="boxd">
-				<img src="../image/toy/im.png" style="width: 8px; height: 60px;" class="d-block w-100" alt="...">
+			<div class="box_icon">
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						카테고리
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
 			</div>
-			
 			<div>
 			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">

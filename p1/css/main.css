@@ -20,8 +20,7 @@ table{
 }
 div{
 	box-sizing: content-box;
-	border: 1px solid black;
-	vertical-align: middle;
+/* 	border: 1px solid black; */
 }
 .outd{
 	display: block; 
@@ -35,6 +34,7 @@ div{
 }
 .nbar{
 	height: 80px;
+	border: 1px solid black;
 }
 .serd{
 	text-align:right;
@@ -45,22 +45,26 @@ div{
 	width: 600px;
 	display:inline-block;
 	float: center;
+	border: 1px solid black;
 }
 .box_signup{
 	height: 60px;
 	width: 100px;
 	display:inline-block;
 	float: right;
+	padding-top: 10px;
 }
 .box_login{
 	height: 60px;
 	width: 100px;
 	display:inline-block;
 	float: right;
+	padding-top: 10px;
 }
-.boxd{
-	height: 60px;
-	width: 100px;
+.box_icon{
+	height: 50px;
+	width: 50px;
 	display:inline-block;
 	float: left;
+	padding-top: 10px;
 }
