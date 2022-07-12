@@ -21,6 +21,7 @@ table{
 div{
 	box-sizing: content-box;
 	border: 1px solid black;
+	vertical-align: middle;
 }
 .outd{
 	display: block; 
@@ -45,21 +46,21 @@ div{
 	display:inline-block;
 	float: center;
 }
-.boxb{
+.box_signup{
 	height: 60px;
 	width: 100px;
 	display:inline-block;
-	float: left;
+	float: right;
 }
-.boxc{
+.box_login{
 	height: 60px;
 	width: 100px;
 	display:inline-block;
-	float: left;
+	float: right;
 }
 .boxd{
 	height: 60px;
 	width: 100px;
 	display:inline-block;
-	float: right;
+	float: left;
 }
